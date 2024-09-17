@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "951937196294",
+    "project_id": "studentsmobileappstdproject",
+    "storage_bucket": "studentsmobileappstdproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951937196294:android:4f143c829260d816cdfe87",
+        "android_client_info": {
+          "package_name": "com.example.flutter_2024_app_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCjSBocJueZUbsc_EN2rFR3s5PiP416_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951937196294:android:1d290a571b623408cdfe87",
+        "android_client_info": {
+          "package_name": "com.example.hebron_university_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCjSBocJueZUbsc_EN2rFR3s5PiP416_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

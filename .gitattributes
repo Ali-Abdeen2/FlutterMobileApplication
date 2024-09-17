@@ -1,0 +1,7 @@
+demo-main/build/app/intermediates/assets/debug/flutter_assets/kernel_blob.bin filter=lfs diff=lfs merge=lfs -text
+demo-main/build/app/outputs/apk/debug/app-debug.apk filter=lfs diff=lfs merge=lfs -text
+demo-main/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*. filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,35 @@
+class AppLink {
+  static String server = "https://82.213.57.181/mobileapitest/api";
+  //static String server = "https://172.16.10.181/mobileapitest/api";
+  static String login = "$server/Login";
+  static String profile = "$server/Students/profile";
+  static String StudyCard = "$server/Students/card";
+  static String studyPlan = "$server/Students/plan";
+  static String marks = "$server/Students/marks";
+  static String News="$server/home/news";
+  static String GetcolgChange="$server/Students/forms/colgChange";
+  static String GetspecChange="$server/Students/forms/specChange";
+  static String GettermPostpone="$server/Students/forms/termPostpone";
+  static String GettermDrop="$server/Students/forms/termDrop";
+  static String addTermDrop="$server/Students/forms/addTermDrop";
+  static String addPostpone="$server/Students/forms/addPostpone";
+  static String Getreglist="$server/Students/reg/list";
+  static String Getcourses="$server/Students/reg/courses";
+  static String GetAvilableClasses="$server/Students/reg/classes";
+  static String DeleteCourse="$server/Students/reg/delete";
+  static String AddCourse="$server/Students/reg/Add";
+  static String SaveReg="$server/Students/reg/save";
+  static String GetAllowedSpecs ="$server/students/forms/colgs/Change/specs";
+  static String AddSpecsChange="$server/Students/forms/addSpecChange";
+  static String GetColleges="$server/students/forms/colgs";
+  static String AddCollegeChange="$server/Students/forms/addColgChange";
+  static String RegisterToken="$server/notifications/register";
+  static String GetMessages="$server/notifications";
+  static String SetRead="$server/notifications/read";
+  static String DeleteNotifaction="$server/notifications/Delete";
+  static String crsDropRequestsList="$server/Students/forms/crsDropRequests";
+  static String CrsDropList="$server/Students/forms/crsDropList";
+  static String addCrsDrop="$server/Students/forms/addCrsDrop";
+  static String ChangePassword="$server/Students/changePassword";
+  static String searchFreeCourse="$server/Students/reg/searchFreeCourse/";
+}

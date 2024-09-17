@@ -1,0 +1,955 @@
+{
+	"info": {
+		"_postman_id": "722782c6-c5b1-4acc-836a-acde9075e6c7",
+		"name": "StudentsMobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30008277"
+	},
+	"item": [
+		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "Get Notifications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/notifications",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Read",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"notificationID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/notifications/read",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"notificationID\": 58\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/notifications/delete",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"aaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/notifications/register",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"My msg title aaaaaaaaa\",\r\n    \"content\": \"My msg content bbbbbbbbbbb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/notifications/test",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reg",
+			"item": [
+				{
+					"name": "Get Reg",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/list",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/courses",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Free Course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/searchFreeCourse/تصميم",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"searchFreeCourse",
+								"تصميم"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Classes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CrsNo\": \"T3280\",\r\n    \"CrsSeq\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/classes",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CrsNo\": \"T3280\",\r\n    \"CrsSeq\": 20,\r\n    \"ClassNo\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/add",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CrsNo\": \"10100\",\r\n    \"CrsSeq\": 15,\r\n    \"ClassNo\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/delete",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Reg",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/reg/save",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"reg",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StudForms",
+			"item": [
+				{
+					"name": "ColgChange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/colgChange",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"colgChange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ColgChange Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Notes\": \"mynotes\",\r\n    \"NewColgNo\": \"1\",\r\n    \"NewSpecNo\": \"11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/addColgChange",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"addColgChange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SpecChange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/specChange",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"specChange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SpecChange Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Notes\": \"mynotes\",\r\n    \"NewSpecNo\": \"T11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/addSpecChange",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"addSpecChange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Term Postpone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/termPostpone",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"termPostpone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add TermPostpone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Notes\": \"تأجيل\",\r\n    \"NewSpecNo\": \"T11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/addPostpone",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"addPostpone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Term Drop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/termDrop",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"termDrop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crs Drop List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/crsDropList",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"crsDropList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crs Drop Requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/crsDropRequests",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"crsDropRequests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add TermDrop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Notes\": \"اسقاط فصل\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/addTermDrop",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"addTermDrop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add CrsDrop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rowID\": 156008,\r\n    \"notes\": \"dd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/Students/forms/addCrsDrop",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"forms",
+								"addCrsDrop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Allowed Colgs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/students/forms/colgs",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"forms",
+								"colgs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Allowed Specs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/students/forms/colgs/T/specs",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"forms",
+								"colgs",
+								"T",
+								"specs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"id\",\r\n  \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/api/Login",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"oldPassword\": \"oldpass\",\r\n  \"newPassword\": \"newpass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/api/Students/changePassword",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/Students/profile",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/home/news",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"home",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Colgs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/reg/colgs",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"reg",
+						"colgs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/reg/colgs/T/specs",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"reg",
+						"colgs",
+						"T",
+						"specs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewsItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/home/news/3",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"home",
+						"news",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudCard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/Students/card",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudPlan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/Students/plan",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"plan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Marks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/Students/marks",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"marks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MarksTerm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/Students/marks/2222",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"marks",
+						"2222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MarksTermCourseDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/Students/marks/2222/T1315",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"marks",
+						"2222",
+						"T1315"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calendar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/home/calendar",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"home",
+						"calendar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "https://172.16.10.181/mobileapitest",
+			"type": "default",
+			"disabled": true
+		},
+		{
+			"key": "api_url",
+			"value": "https://82.213.57.181/mobileapitest",
+			"type": "default",
+			"disabled": true
+		}
+	]
+}
